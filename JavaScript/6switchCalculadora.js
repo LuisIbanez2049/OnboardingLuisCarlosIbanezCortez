@@ -20,7 +20,7 @@ console.log(`Numero 1: ${numeroEntero1}`)
 let numero2 = prompt("Ingrese el numero 2 que sea mayor a 0 y menor o igual a 100")
 let numeroEntero2 = Number(numero2)
 while (numeroEntero2 < 0 || numeroEntero2 > 100) {
-    numero2 = prompt("El numero no esta dentro del rango de 1 a 100. Reingrese el numero 2que sea mayor a 0 y menor o igual a 100")
+    numero2 = prompt("El numero no esta dentro del rango de 1 a 100. Reingrese el numero 2 que sea mayor a 0 y menor o igual a 100")
     numeroEntero2 = Number(numero2)
 }
 

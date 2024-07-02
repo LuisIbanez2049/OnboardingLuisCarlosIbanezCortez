@@ -6,6 +6,7 @@ console.log("---------------EJERCICIOS BASICOS NIVEL ALTO  PUNTO 1--------------
 let nombreCliente = prompt("Ingrese su nombre").toLowerCase()
 let pase = prompt("Ingrese su tipo de pase `vip` o `normal`").toLowerCase()
 
+
 if (nombreCliente == "luis" || pase == "vip") {
     alert("Eres bienvenido")
 }
@@ -13,15 +14,15 @@ if (nombreCliente == "luis" || pase == "vip") {
 else if (pase == "normal") {
     let respuestaClienteComprarVip = confirm("Quiere comprar Pase Vip?")
     if (respuestaClienteComprarVip) {
-        let respuestaClientePoseeMasDe1000 = confirm("Posees mas de 1000 pesos para realizar la compra?'")
+        var respuestaClientePoseeMasDe1000 = confirm("Posees mas de 1000 pesos para realizar la compra?'")
         if (respuestaClientePoseeMasDe1000) {
             alert("Transaccion exitosa. Eres Bienvenido!")
         }
         else if (respuestaClientePoseeMasDe1000 != true) {
-            alert("BYE BYE")
+            alert("No puedes realizar la compra con menos de 1000 pesos")
         }
     }
-    else if (respuestaClienteComprarVip != true) {
+    if (respuestaClienteComprarVip != true || respuestaClientePoseeMasDe1000 != true) {
         let respuestaClienteUsarPaseNormal = confirm("Quieres usar tu pase normal?")
         if (respuestaClienteUsarPaseNormal) {
             alert("Eres Binvenido!")
@@ -39,11 +40,11 @@ else if (pase == "normal") {
                         alert("Transaccion exitosa. Eres Bienvenido!")
                     }
                     else if (respuestaClientePoseeMasDe1000 != true) {
-                        alert("BYE BYE")
+                        alert("Regresa en otro dia")
                     }
                 }
                 else if (respuestaClienteComprarEntrada != true) {
-                    alert("BYE BYE")
+                    alert("Regresa otro dia")
                 }
             }
         }

@@ -30,11 +30,19 @@ const resultadoDeDivision = function(numero1, numero2)
  }
 
  let num1 = 6
- let num2 = 3
+ let num2 = 0
 
  // Como la variable "resultadoDeDivision" tiene asignado una funcion tenemos que llamar 
  // a la variable
 
- console.log(`La division de ${num1} entre ${num2} es: ${resultadoDeDivision(num1, num2)}`)
+ if(num2 == 0)
+ {
+    console.log("No se puede divir por 0")
+ }
+ else
+ {
+    console.log(`La division de ${num1} entre ${num2} es: ${resultadoDeDivision(num1, num2)}`)
+ }
+
 
  

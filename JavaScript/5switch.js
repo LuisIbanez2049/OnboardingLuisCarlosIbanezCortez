@@ -3,14 +3,14 @@ console.log("---------------EJERCICIOS BASICOS NIVEL MEDIO  PUNTO 4-------------
 
 console.log("-------------------------------------------------------SWITCH--------------------------------------")
 
-let respuestaUsuario = prompt("Ingrese el color `rojo`, `azul` o `verde`")
+let respuestaUsuario = prompt("Ingrese el color `rojo`, `azul` o `verde`").toLowerCase()
 while (respuestaUsuario == false) 
 {
     respuestaUsuario = prompt("Ingrese el color `rojo`, `azul` o `verde`")
 }
 
-if (respuestaUsuario)
-    {
+
+    
         switch (respuestaUsuario) {
             case "rojo":
                 console.log("El color de la pasion")
@@ -25,8 +25,9 @@ if (respuestaUsuario)
                 break;
         
             default:
+                console.log("Color no valido. Colores disponibles ")
                 break;
         }
-    }
+   
 
     

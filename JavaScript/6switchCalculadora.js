@@ -8,7 +8,7 @@ console.log("-------------------------------------------------------SWITCH-CALCU
 let numero1 = prompt("Ingrese el numero 1 que sea mayor a 0 y menor o igual a 100")
 let numeroEntero1 = Number(numero1)
 console.log(numeroEntero1)
-while (numeroEntero1 < 0 || numeroEntero1 > 100) {
+while (numeroEntero1 <= 0 || numeroEntero1 > 100) {
     console.log("")
     numero1 = prompt("El numero no esta dentro del rango de 1 a 100. Reingrese numero 1 que sea mayor a 0 y menor o igual a 100")
     numeroEntero1 = Number(numero1)
@@ -28,7 +28,7 @@ console.log(`Numero 2: ${numeroEntero2}`)
 
 let respuestaRealizarOtraOperacion = confirm("Quiere realizar una operacion?")
 console.log(respuestaRealizarOtraOperacion)
-while (respuestaRealizarOtraOperacion == true) {
+while (respuestaRealizarOtraOperacion) {
     let respuestUsuario = prompt("Ingrese operaciona a realizar: `suma`, `resta`, `multiplicacion` o `division`").toLowerCase()
 
     while (respuestUsuario == false || (respuestUsuario != "suma" && respuestUsuario != "resta" && respuestUsuario != "multiplicacion" && respuestUsuario != "division")) {
